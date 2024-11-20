@@ -54,6 +54,18 @@ function App() {
 
 
 
+
+
+//start
+//jsx er moddhe ak line e shortcut
+const [roll, setRoll] = useState(0)
+//end
+
+
+
+
+
+
 //start
   let varA = 0;
   const handleVariable = () => {
@@ -95,6 +107,18 @@ function App() {
     <h2>This is Count: {count}</h2>
     <button onClick={()=>handleCount(plus)}>Count Change</button>
     {/* (10) o pass kora jai variable e na rekeh */}
+
+
+
+    <br/><br/>
+    <span>-----------------------</span>
+    <br/><br/>
+
+
+
+    {/* ak line e shortcut */}
+    <h2>This is State Count: {roll} </h2>
+    <button onClick={() => setRoll(roll + 1)}>State Count</button>
 
 
 
