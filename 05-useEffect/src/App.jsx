@@ -32,7 +32,7 @@ function App() {
   //⬇️
   // useEffect(()=>{
   //   console.log("hello from useEffect from useEffect")
-  // },[])
+  // },[]) //You use an empty dependency array when the effect does not depend on any variables and should only run once.
   //⬇️
   useEffect(()=>{
     console.log("hello from useEffect")
