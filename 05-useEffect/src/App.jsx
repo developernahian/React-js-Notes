@@ -38,7 +38,8 @@ function App() {
     console.log("hello from useEffect")
   },[state,salary])//state and salary change hole console e print hobe,but roll update hole console e print hobe na
   // useEffect(()=>{...},[a,b])
-
+  
+//NOTE: this code focus only console log 
 
 
 
