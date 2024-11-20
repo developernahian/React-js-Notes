@@ -1,0 +1,155 @@
+# Steps
+
+1. Create New React App using vite
+2. Add HTTP Client Package Axios
+3. Add React Router Dom
+4. Configure Tailwind CSS
+5. Configure DaisyUI
+6. Create dist folder
+7. SURGE Deploy
+
+—————————————————————————
+
+# 📍Step-1  Create New React App using vite
+
+Visit Vite website https://vite.dev/guide/ then pick the NPM Command (command given below)
+
+```bash
+npm create vite@latest project-folder-name -- --template react
+```
+
+```bash
+cd project-folder-name
+```
+
+```bash
+npm install /--OR--/ npm i
+```
+
+```bash
+npm run dev
+```
+
+————————————————————————
+
+# 📍 Step-2 Add HTTP Client Package Axios
+
+visit Asios website or npm website and search Axios
+
+https://axios-http.com/docs/intro  (OR) https://www.npmjs.com/package/axios
+
+```bash
+npm install axios  //// npm i axios
+```
+
+————————————————————————
+
+# 📍 Step-3 Add HTTP Client Package Axios
+
+Visit React Router website or npm website and search react router Dom
+
+https://reactrouter.com/en/main/start/tutorial  (OR)  https://www.npmjs.com/package/react-router-dom
+
+```bash
+npm install react-router-dom  ///// npm i react-router-dom
+```
+
+```bash
+npm install localforage match-sorter sort-by    //// ei command ta na dileo hoy
+```
+
+NOTE:  (((npm install react-router-dom localforage match-sorter sort-by))) 2 ta command akSathei ei command er maddhome dewa jai.....…
+
+---
+
+————————————————————————
+
+---
+
+# 📍 Step-4 Configure Tailwind CSS
+
+tailwind website -> get started -> Framework Guides -> select Vite
+
+https://tailwindcss.com/docs/guides/vite
+
+```bash
+npm install -D tailwindcss postcss autoprefixer
+```
+
+```bash
+npx tailwindcss init -p
+```
+
+tailwind.config.js file er ➡️ content: [], replace by ⬇️
+
+```jsx
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+```
+
+src folder er moddhe index.css er all code delete kore nicher 3 ta code paste krote hobe ⬇️⬇️⬇️
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+src folder er moddhe App.css er code gulo delete korte hobe. karon ei code er dorkar nai.
+
+—————————————————————————
+
+# 📍 Step-5 Configure DaisyUI
+
+Visit DaisyUI website -> HowToUseButton or Menu->installTab->NPM
+
+```bash
+npm i -D daisyui@latest
+```
+
+tailwind.config.js file er moddhe plugins: [], replace by ⬇️
+
+```bash
+  plugins: [
+    require('daisyui'),
+  ],
+```
+
+————————————————————————
+
+# 📍 Step-6 Create dist folder
+
+```bash
+npm run build
+```
+
+———————————————————
+
+# 📍 Step-7 SURGE Depoly
+
+select cmd,,, not powershell
+
+type surge -V for if i want to check verson
+
+my-project folder ba project foler moddhe theke type -> surge dist
+
+domain url suggest korbe then url edit kore accept na kora porjonto try korte hobe
+
+url accept korle public folder er moddhe CNAME file create kore domain nam paste korte hobe
+
+NOTE:
+code e edit korle dist update er jonno again⬇️⬇️
+npm run build
+then surge update korar jonno⬇️⬇️
+surge dist
+
+more about surge⬇️⬇️
+
+surge er all comman er list dekhar jonno ➡️➡️ surge -h
+surge e kon kon domain create korechi dekhar jonno ➡️➡️ surge list
+surge e kon mail login kora seta check korar jonno ➡️➡️ surge whoami
+delete any domain then ➡️➡️ surge teardown ➡️➡️ write the domain and enter
+
+———————————
