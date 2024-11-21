@@ -1,3 +1,4 @@
+// NOTE: App.jsx-> Products-> Product-> Pro-> P
 import './App.css';
 import Products from './components/Products'
 
@@ -20,3 +21,9 @@ export default function App() {
     </>
   )
 }
+
+// NOTE: App.jsx-> Products-> Product-> Pro-> P
+
+
+//NOTE: rafce -> App.jsx er code clear kore ei command
+// NOTE:or rfc
