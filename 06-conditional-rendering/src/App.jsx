@@ -11,7 +11,7 @@ function App() {
     setStatus(!status)
   }
 
-  console.log(status);
+  console.log(status);//page reload e true, then very button click e false, true, false evabe change hobe
   
 
   return (
@@ -24,6 +24,7 @@ function App() {
 
 
 
+      {/* status true hole online show korbe ar true na hole offline show korbe */}
       {
         status ? <h2>Online</h2> : <h2>Offline</h2>
       }
