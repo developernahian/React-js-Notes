@@ -13,7 +13,7 @@ function App() {
       <Service
        num1={num1} 
        arr={arr}
-       header={<h2>This is passed via a custom prop</h2>}
+       headerrr={<h2>This is passed via a custom prop</h2>}
        >
         <h2>Children h2</h2>
         <h3>Children h3</h3>
