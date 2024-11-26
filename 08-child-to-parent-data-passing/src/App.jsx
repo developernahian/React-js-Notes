@@ -1,28 +1,31 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css'
 import Service from './Service';
 
 function App() {
   
-  
+  // NOTE: must check browser console
 
-  const [status, setStatus] = useState()
+  const [status, setStatus] = useState(0)
   console.log('A',status);
+
+
   
 
   const transfer = (message) => {
     // console.log('B',message+1);
     console.log('B',message);
-    setStatus(message)
+    setStatus(prv=>prv+message)
     
   }
-//PROBLEM: why A not update? with props
+
 
 
 
   return (
     <>
+    <h>{status}</h>
       
       <Service transferProps={transfer} />
 
