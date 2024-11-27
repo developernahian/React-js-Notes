@@ -17,7 +17,9 @@ function App() {
      <br/><br/><br/><span>------------------task2 page------if else-----------</span><br/>
      <Task2 isDone={isDone} task="NodeJS" />
 
-     <br/><br/><br/><span>------------------task2 page------ using || -----------</span><br/>
+     <br/><br/><br/><span>------------------task2 page------ using && || -----------</span><br/>
+     {/* && true hole print */}
+     {/* || false hole print */}
      <Task3 isDone={isDone} task="MongoDB" />
     </>
   )

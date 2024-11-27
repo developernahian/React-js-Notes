@@ -1,5 +1,9 @@
 //here isDone is FALSE and task is MongoDB
 
+// && true hole print
+// || false hole print
+
+
 const Task3 = ({task, isDone}) => {
     return (
         <>
