@@ -16,7 +16,7 @@ const Users = () => {
         .then(data => setUsers(data))
     },[])
     return (
-        <div className="box">
+        <div className="border">
             <h2>Users: {users.length}</h2>
 
             
@@ -36,7 +36,7 @@ export default Users;
 /*
 *
 * 1. declare a state to hold the data
-* 2. useEffect with call back and dependency
+* 2. useEffect with call back and no dependency (this code as a empty array)
 * 3. use fetch OR async await to load data 
 * 4. set loaded data to the state
 * 5. display data on the component

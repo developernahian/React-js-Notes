@@ -4,3 +4,7 @@
     padding: 15px;
     border-radius: 15px;
 }
+
+.border{
+    border: 5px solid red;
+}
