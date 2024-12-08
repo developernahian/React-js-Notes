@@ -7,7 +7,7 @@ import Watch from '../Watch/Watch'; // ak level upore -> Watch Folder -> Watch.j
 // Single import
 import add from '../../Utils/calculateSingle'; //(add function re call korechi) // 2 level upore -> Utils Folder -> calculateSingle.js .jsx na dileo hoy
 // Multiple import
-import { devide, subtract, multiply } from '../../Utils/calculateMultiple'; //(devide, substract, multiply function re call korechi) // 2 level upore -> Utils Folder -> calculateSingle.js .jsx na dileo hoy
+import { divide, subtract, multiply } from '../../Utils/calculateMultiple'; //(divide, substract, multiply function re call korechi) // 2 level upore -> Utils Folder -> calculateSingle.js .jsx na dileo hoy
 
 
 
@@ -25,9 +25,9 @@ const Sunglass = () => {
     console.log('add: ',sumResult);//121
 
 
-    // devide, subtract, multiply function call from calculateMultiple.jx
-    const devideResult = devide(first, second)
-    console.log('devide: ', devideResult);
+    // divide, subtract, multiply function call from calculateMultiple.jx
+    const divideResult = divide(first, second)
+    console.log('divide: ', divideResult);
     const subtractResult = subtract(first, second)
     console.log('subtract: ', subtractResult);
     const multiplyResult = multiply(first, second)
@@ -42,8 +42,8 @@ const Sunglass = () => {
             <h3>Sum: {sumResult}</h3>
             {/* UI output-> Sum: 212 */}
 
-            <h3>Devide: {devideResult}</h3>
-            {/* UI output-> Devide: 0.8333333333333334 */}
+            <h3>Divide: {divideResult}</h3>
+            {/* UI output-> Divide: 0.8333333333333334 */}
 
             <h3>Subtract: {subtractResult}</h3>
             {/* UI output-> Subtract: -11 */}

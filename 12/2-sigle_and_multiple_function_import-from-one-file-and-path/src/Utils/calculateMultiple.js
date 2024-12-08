@@ -1,4 +1,4 @@
-const devide = (first, second) => {
+const divide = (first, second) => {
     return first / second
 }
 
@@ -10,7 +10,7 @@ const multiply = (first, second) => {
     return first * second
 }
 
-export { devide, subtract, multiply }
+export { divide, subtract, multiply }
 
 
 // export { ... } is a named export, so you can export multiple items simultaneously.
