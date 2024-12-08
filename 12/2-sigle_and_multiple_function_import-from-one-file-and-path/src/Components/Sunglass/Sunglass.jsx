@@ -14,6 +14,9 @@ import add from '../../Utils/calculateSingle'; //(add function re call korechi) 
 // import { subtract} from '../../Utils/calculateMultiple';
 // import { multiply} from '../../Utils/calculateMultiple';
 //OR.OR.OR.OR.OR.OR
+//import all-------->> import * as calMultiple from '../../Utils/calculateMultiple';
+//use--------------->> console.log(math.divide(5, 3));       // Output: 8
+//use--------------->> console.log(math.subtract(5, 3)); // Output: 2
 // Multiple import
 import { divide, subtract, multiply } from '../../Utils/calculateMultiple'; //(divide, substract, multiply function re call korechi) // 2 level upore -> Utils Folder -> calculateSingle.js .jsx na dileo hoy
 
