@@ -4,8 +4,16 @@
 import './Sunglass.css'// same folder er moddhe import
 import Watch from '../Watch/Watch'; // ak level upore -> Watch Folder -> Watch.jsx // .jsx na dileo hoy
 
-// Single import
+// Single default import
 import add from '../../Utils/calculateSingle'; //(add function re call korechi) // 2 level upore -> Utils Folder -> calculateSingle.js .jsx na dileo hoy
+
+
+
+
+// import { divide} from '../../Utils/calculateMultiple';
+// import { subtract} from '../../Utils/calculateMultiple';
+// import { multiply} from '../../Utils/calculateMultiple';
+//OR.OR.OR.OR.OR.OR
 // Multiple import
 import { divide, subtract, multiply } from '../../Utils/calculateMultiple'; //(divide, substract, multiply function re call korechi) // 2 level upore -> Utils Folder -> calculateSingle.js .jsx na dileo hoy
 
