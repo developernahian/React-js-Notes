@@ -4,7 +4,7 @@ Visit -> https://www.npmjs.com/package/prop-types || OR || https://github.com/fa
 
 INSTALL PROCESS-> npm install --save prop-types
 
-IMPORT  PROCESS-> import PropTypes from 'prop-types'; // ES6
+IMPORT  PROCESS-> import PropTypes from 'prop-types'; // ES6 // shortcut->> ipt enter // function with proptype both shortcut->>rafcp
 
 USE PROCESS-> export er age proptype declear korte hobe........
 Hello.propTypes = {

@@ -1,8 +1,9 @@
 //install PropTypes->    npm install --save prop-types
 // import PropTypes
 import PropTypes from 'prop-types';
+import { FaBookmark } from "react-icons/fa";
 
-const Blog = ({blog}) => {
+const Blog = ({blog, handleAddToBookmark}) => {
     // console.log(blog);
     
     const {title, cover, author, author_img, reading_time, posted_date, hashtags} = blog   
@@ -15,7 +16,7 @@ const Blog = ({blog}) => {
 
 
 
-            <div className='flex justify-between bg-red-400 mb-4'>
+            <div className='flex justify-between mb-4'>
                 
                 <div className='flex'>
                     <img className='w-14' src={author_img} alt="img" />
@@ -27,9 +28,10 @@ const Blog = ({blog}) => {
                 </div>
 
 
-                <div>
+                <div className='flex items-center'>
                     <span>{reading_time} min read</span>
-                    <button>Bookmark</button>
+                    {/* BOOKMARK: */}
+                    <button onClick={()=>handleAddToBookmark(blog)} className='ml-2 text-red-600 text-2xl' > <FaBookmark /> </button>
                 </div>
 
 
@@ -53,6 +55,7 @@ const Blog = ({blog}) => {
 //props validation
 Blog.propTypes = {
     blog: PropTypes.object.isRequired,
+    handleAddToBookmark: PropTypes.func.isRequired
 };
 
 export default Blog;
