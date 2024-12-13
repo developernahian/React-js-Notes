@@ -3,20 +3,20 @@
 import PropTypes from 'prop-types';
 import { FaBookmark } from "react-icons/fa";
 
-const Blog = ({blog, handleAddToBookmark}) => {
+const Blog = ({blog, handleAddToBookmark, handleMarkAsRead}) => {
     // console.log(blog);
     
     const {title, cover, author, author_img, reading_time, posted_date, hashtags} = blog   
     
     return (
         // BOOKMARK:
-        <div className='mb-20'>
+        <div className='mb-10 space-y-4'>
         {/* Dynamic alt */}
             <img className='w-full mb-8' src={cover} alt={`Cover Picture of the title ${title}`} />
 
 
 
-            <div className='flex justify-between mb-4'>
+            <div className='flex justify-between mb-4 '>
                 
                 <div className='flex'>
                     <img className='w-14' src={author_img} alt="img" />
@@ -40,6 +40,8 @@ const Blog = ({blog, handleAddToBookmark}) => {
 
             
             <h2>{title}</h2>
+
+            <p>
             {/* <p>{hashtags}</p>  OUTPUT: beginnerses6 without space. so map korte hobe */}
             {/* BOOKMARK: */}
             {/* hastags map na korle alada alada na hoye without space aksathe show kore */}
@@ -48,6 +50,11 @@ const Blog = ({blog, handleAddToBookmark}) => {
             }
             {/* OUTPUT: #beginners #es6 */}
             {/* NOTE: {} er moddhe comment kora jabe na */}
+            </p>
+
+            
+
+            <button className='text-purple-800 font-bold underline' onClick={()=>handleMarkAsRead(reading_time)}>Mark As Read</button>
         </div>
     );
 };
@@ -55,7 +62,8 @@ const Blog = ({blog, handleAddToBookmark}) => {
 //props validation
 Blog.propTypes = {
     blog: PropTypes.object.isRequired,
-    handleAddToBookmark: PropTypes.func.isRequired
+    handleAddToBookmark: PropTypes.func.isRequired,
+    handleMarkAsRead: PropTypes.func.isRequired
 };
 
 export default Blog;
