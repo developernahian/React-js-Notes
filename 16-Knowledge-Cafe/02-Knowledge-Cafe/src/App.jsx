@@ -19,13 +19,21 @@ function App() {
     setBookmarks(newBookmarks);
   }
 
-  const handleMarkAsRead = time => {
+  const handleMarkAsRead = (id,time) => {
     // console.log('marking as read',time);
     const newReadingTime = readingTime + time;
     setReadingTime(newReadingTime);
-    
+
+
+    //remove the read blog from bookmark
+    // console.log('remove bookmark', id);
+    const remainingBookmarks = bookmarks.filter(bookmark => bookmark.id !== id);// je id select korechi sei id bade baki id gulo debe...
+    setBookmarks(remainingBookmarks);
     
   }
+
+
+
 
 
   return (

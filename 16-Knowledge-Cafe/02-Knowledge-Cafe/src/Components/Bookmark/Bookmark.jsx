@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 
 const Bookmark = ({bookmark}) => {
+    // console.log(typeof bookmark);
 
     const {title} = bookmark
 
