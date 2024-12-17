@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Galaxy Z Pro Max",
+    "image": "https://i.ibb.co.com/7VY2qh7/photo-1609500537901-91f5b4c900e6.jpg",
+    "price": 199,
+    "description": "A sleek foldable smartphone with cutting-edge features and 5G support.",
+    "isFeature": true
+  },
+  {
+    "id": 2,
+    "name": "Pixel Ultra 8",
+    "image": "https://i.ibb.co.com/GJ437nG/photo-1559312379-6eff3ba65888.jpg",
+    "price": 299,
+    "description": "The ultimate Android experience with a powerful AI camera and compact design.",
+    "isFeature": true
+  },
+  {
+    "id": 3,
+    "name": "iPhone 15 Lite",
+    "image": "https://i.ibb.co.com/hVtrBY8/photo-1687178226735-8608657046ae.jpg",
+    "price": 599,
+    "description": "A budget-friendly Apple device with an ultra-smooth performance and vibrant display.",
+    "isFeature": false
+  },
+  {
+    "id": 4,
+    "name": "OnePlus Vibe 12",
+    "image": "https://i.ibb.co.com/C9LhQcr/photo-1706670227100-7fd759f27807.jpg",
+    "price": 499,
+    "description": "An ultra-fast phone with a 120Hz display and long-lasting battery.",
+    "isFeature": false
+  },
+  {
+    "id": 5,
+    "name": "Xiaomi Note X7",
+    "image": "https://i.ibb.co.com/s5BpHM2/photo-1659436868784-5781d7c2ba7d.jpg",
+    "price": 200,
+    "description": "An affordable powerhouse with a massive screen and high-capacity battery.",
+    "isFeature": true
+  }
+]

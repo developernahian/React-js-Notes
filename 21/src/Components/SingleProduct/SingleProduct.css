@@ -1,0 +1,23 @@
+.card {
+    width: 350px;
+    border: 1px solid white;
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: -4px 4px 30px gray;
+    text-align: center;
+
+}
+
+.img {
+    width: 100%;
+}
+
+.card button {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
