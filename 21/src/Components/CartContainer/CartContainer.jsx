@@ -5,8 +5,8 @@ import Cart from '../Cart/Cart';
 import About from '../About/About';
 
 export default function CartContainer({ activeTab, handleClickActiveTab }) {
-  console.log(activeTab);//output: cart or about
-  console.log(handleClickActiveTab);// output: function
+  // console.log(activeTab);//output: cart or about
+  // console.log(handleClickActiveTab);// output: function
 
 
 

@@ -1,9 +1,10 @@
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 import './AllProducts.css'
 import { useEffect } from 'react';
 import SingleProduct from '../SingleProduct/SingleProduct';
 
-export default function AllProducts() {
+export default function AllProducts({handleSelectedProducts}) {
   const [products, setProducts] = useState([]);
 
 
@@ -27,8 +28,13 @@ export default function AllProducts() {
     <div>
       <h1>AllProducts.jsx</h1>
       {
-        products.map(product => <SingleProduct key={product.id} product={product}></SingleProduct>)
+        products.map(product => <SingleProduct key={product.id} product={product} handleSelectedProducts={handleSelectedProducts}></SingleProduct>)
       }
     </div>
   )
 }
+
+
+AllProducts.propTypes = {
+  handleSelectedProducts: PropTypes.func.isRequired 
+};

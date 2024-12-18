@@ -1,8 +1,8 @@
 import './SingleProduct.css'
 import PropTypes from 'prop-types';
 
-export default function SingleProduct({product}) {
-    console.log(product);
+export default function SingleProduct({product, handleSelectedProducts}) {
+    // console.log(product);
     
     const {name, image, price, description, isFeature } = product
 
@@ -18,7 +18,8 @@ export default function SingleProduct({product}) {
         <p>Feature: {isFeature ? 'Feature Category' : 'Not Category'}</p>
       </div>
 
-      <button>Add to Cart</button>
+
+      <button onClick={() => handleSelectedProducts(product)}>Add to Cart</button>
     </div>
   )
 }
@@ -26,6 +27,7 @@ export default function SingleProduct({product}) {
 SingleProduct.propTypes = {
   product: PropTypes.object.isRequired, // Must be a string and is required
 //   handleClickActiveTab: PropTypes.func.isRequired, // Must be a function and is required
+  handleSelectedProducts: PropTypes.func.isRequired
 };
 
 
