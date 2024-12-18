@@ -3,19 +3,26 @@ import { useState } from 'react'
 import './App.css'
 import AllProducts from './Components/Allproducts/AllProducts'
 import CartContainer from './Components/CartContainer/CartContainer'
-import Navbar from './Components/Header/Navbar'
+import Navbar from './Components/Navbar/Navbar'
 
 function App() {
 
-  
+
 
   const [activeTab, setActiveTab] = useState('cart'); // Only store 'cart' or 'about'
   const [selectedProducts, setSelectedProducts] = useState([]);
 
+  const [price, setPrice] = useState(500);
 
 
+const handleIncreasePrice = (pr) => {
+  setPrice(price+ pr);
+}
 
-
+const handleDecreasePrice = (id) => {
+  const product = selectedProducts.find(p => p.id == id);
+  setPrice(price - product.price);
+}
 
 
   const handleClickActiveTab = (tab) => {
@@ -34,11 +41,12 @@ function App() {
     // console.log(AddToCartProduct);
     // IMPORTANT:
     //isEsist undefine = false.. isExist not undefine = true
-    const isExist = selectedProducts.find(product => product.id == AddToCartProduct.id);
+    // const isExist = selectedProducts.find(product => product.id == AddToCartProduct.id);
     //or
     // const isExist = selectedProducts.find(item => item.id == AddToCartProduct.id);
     //or
-    // const isExist = selectedProducts.find(yesNo => yesNo.id == AddToCartProduct.id);
+    const isExist = selectedProducts.find(p => p.id == AddToCartProduct.id);
+
     
     //isExist undefine = false.. isExist not undefine = true
     if(isExist){
@@ -47,7 +55,8 @@ function App() {
       alert('Product already added to cart');
     }
     else{
-      console.log('naiiiii');
+      console.log('naiiiii, so add korlam');
+      handleIncreasePrice(AddToCartProduct.price);
       
       setSelectedProducts([...selectedProducts, AddToCartProduct]);
     }
@@ -66,6 +75,15 @@ function App() {
 
 
 
+//id ta khuje pele ota delete kore baki gulo dekhabe. eta filer er kaz. p-> product->item-abc kichu akta dilei hobe...
+const handleDelete = (id) => {
+  handleDecreasePrice(id)
+  const remaining = selectedProducts.filter(p => p.id !== id);
+  setSelectedProducts(remaining);
+}
+
+
+
 
   
 
@@ -74,12 +92,14 @@ function App() {
 
   return (
     <>
+    <Navbar selectedProducts={selectedProducts} price={price}></Navbar>
       <div className='container'>
-        <Navbar></Navbar>
+        
 
         <div className='flex'>
         <AllProducts handleSelectedProducts={handleSelectedProducts}></AllProducts>
-        <CartContainer activeTab={activeTab} handleClickActiveTab={handleClickActiveTab} />
+        <CartContainer activeTab={activeTab} handleClickActiveTab={handleClickActiveTab} selectedProducts={selectedProducts}
+        handleDelete={handleDelete} />
         </div>
 
       </div>
@@ -90,3 +110,14 @@ function App() {
 }
 
 export default App
+
+
+
+
+
+
+
+
+
+
+

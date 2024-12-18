@@ -1,0 +1,17 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(194, 172, 209);
+    padding: 10px;
+    font-size: 23px;
+    padding-left: 40px;
+    padding-right: 40px;
+    list-style-type: none;
+}
+
+.nav-container li{
+    padding: 25px;
+    cursor: pointer;
+    font-size: 27px;
+}

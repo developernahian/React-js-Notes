@@ -4,7 +4,7 @@ import './CartContainer.css'
 import Cart from '../Cart/Cart';
 import About from '../About/About';
 
-export default function CartContainer({ activeTab, handleClickActiveTab }) {
+export default function CartContainer({ activeTab, handleClickActiveTab , selectedProducts, handleDelete}) {
   // console.log(activeTab);//output: cart or about
   // console.log(handleClickActiveTab);// output: function
 
@@ -32,7 +32,7 @@ export default function CartContainer({ activeTab, handleClickActiveTab }) {
 */}
 
 
-      <div className="flex toggle">
+      <div className="flex">
         {/* Toggle Buttons */}
         <div
           onClick={() => handleClickActiveTab('cart')}
@@ -49,7 +49,7 @@ export default function CartContainer({ activeTab, handleClickActiveTab }) {
       </div>
 
       {/* Conditional Rendering */}
-      {activeTab === 'cart' ? <Cart /> : <About />}
+      {activeTab === 'cart' ? <Cart selectedProducts={selectedProducts} handleDelete={handleDelete}/> : <About />}
 
     </div>
   )
@@ -59,6 +59,8 @@ export default function CartContainer({ activeTab, handleClickActiveTab }) {
 CartContainer.propTypes = {
   activeTab: PropTypes.string.isRequired, // Must be a string and is required
   handleClickActiveTab: PropTypes.func.isRequired, // Must be a function and is required
+  selectedProducts: PropTypes.array.isRequired,
+  handleDelete: PropTypes.func.isRequired
 };
 
 
