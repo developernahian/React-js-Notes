@@ -12,7 +12,7 @@ function App() {
   const [activeTab, setActiveTab] = useState('cart'); // Only store 'cart' or 'about'
   const [selectedProducts, setSelectedProducts] = useState([]);
 
-  const [price, setPrice] = useState(500);
+  const [price, setPrice] = useState(0);
 
 
 const handleIncreasePrice = (pr) => {
