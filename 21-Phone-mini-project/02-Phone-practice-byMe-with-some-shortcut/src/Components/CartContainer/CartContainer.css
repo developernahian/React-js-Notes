@@ -1,0 +1,13 @@
+.btn{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.active{
+    background-color: blue;
+    color: white;
+}
