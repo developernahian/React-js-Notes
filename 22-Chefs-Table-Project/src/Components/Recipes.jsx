@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
+import PropTypes from 'prop-types';
 
 
-const Recipes = () => {
+const Recipes = ({addRecipeToQueue}) => {
 
     const [recipes, setRecipes] = useState([]);
 
@@ -11,7 +12,7 @@ const Recipes = () => {
             .then(data => setRecipes(data))
     }, [])
 
-    console.log(recipes);
+    // console.log(recipes);
 
 
     return (
@@ -92,7 +93,7 @@ const Recipes = () => {
 
 
                                 <div className="card-actions">
-                                    <button className="btn bg-green-400 rounded-full px-8 text-xl text-gray-800 mt-6 font-medium">Want To Cook</button>
+                                    <button onClick={() => addRecipeToQueue(recipe)} className="btn bg-green-400 rounded-full px-8 text-xl text-gray-800 mt-6 font-medium">Want To Cook</button>
                                 </div>
 
 
@@ -109,6 +110,14 @@ const Recipes = () => {
 
         </div>
     );
+};
+
+
+
+
+
+Recipes.propTypes = {
+    addRecipeToQueue: PropTypes.func.isRequired
 };
 
 export default Recipes;
