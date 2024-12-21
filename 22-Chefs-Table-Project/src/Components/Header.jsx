@@ -28,8 +28,10 @@ const Header = () => {
             </ul>
             {/* menu end */}
 
+
+            {/* search and user start */}
             <div className="flex flex-row justify-between items-center gap-4">
-                {/* search */}
+                {/* search start */}
                 <div className="flex justify-between items-center relative">
                     <input type="text" placeholder="Search" className="py-4 px-12 bg-gray-100 rounded-full placeholder-gray-800 outline-none" />
                     <div className="absolute inset-y-0 -left-1 pl-4 flex items-center text-2xl">
@@ -39,13 +41,13 @@ const Header = () => {
 
                 </div>
 
-                {/* search */}
-
+                {/* user start*/}
                 <div className="bg-green-400 flex items-center justify-center rounded-full w-12 h-12">
                     <i className="fa-regular fa-user-circle text-3xl"></i>
                 </div>
 
             </div>
+            {/* search and user end */}
 
 
 
