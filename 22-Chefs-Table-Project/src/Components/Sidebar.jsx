@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
 
-const Sidebar = ({ recipeQueue, handleRemove, preparedRecipe }) => {
+const Sidebar = ({ recipeQueue, handleRemove, preparedRecipe, calculateTimeAndCalories, totalTime, totalCalories }) => {
     // console.log(recipeQueue);
 
     return (
         <div className="md:w-1/3 border-2 rounded-2xl text-gray-600 p-2 bg-base-100">
-            
+
 
             {/* Want to cook table****************************************************************** */}
             <div className="overflow-x-auto">
-            <h2 className="border-b-2 pb-2 text-2xl font-semibold text-gray-800 text-center">Want To Cook: {recipeQueue.length}</h2>
+                <h2 className="border-b-2 pb-2 text-2xl font-semibold text-gray-800 text-center">Want To Cook: {recipeQueue.length}</h2>
                 <table className="table">
                     {/* head */}
                     <thead>
@@ -32,7 +32,11 @@ const Sidebar = ({ recipeQueue, handleRemove, preparedRecipe }) => {
                                     <td>{recipe.preparing_time} minutes</td>
                                     <td>{recipe.calories} calories</td>
                                     <td>
-                                        <button onClick={() => handleRemove(recipe.recipe_id)} className="bg-green-400 rounded-full px-1 py-1 md:px-4 md:py-2 my-2  text-gray-800 font-medium">Preparing</button>
+                                        <button onClick={() => {
+                                            handleRemove(recipe.recipe_id)
+                                            calculateTimeAndCalories(recipe.preparing_time, recipe.calories)
+                                        }}
+                                            className="bg-green-400 rounded-full px-1 py-1 md:px-4 md:py-2 my-2  text-gray-800 font-medium">Preparing</button>
                                     </td>
                                 </tr>
 
@@ -47,7 +51,7 @@ const Sidebar = ({ recipeQueue, handleRemove, preparedRecipe }) => {
 
             {/* Currently cooking table ########################################################## */}
             <div className="overflow-x-auto mt-8">
-            <h2 className="border-b-2 pb-2 text-2xl font-semibold text-gray-800 text-center">Currently Cooking: {preparedRecipe.length}</h2>
+                <h2 className="border-b-2 pb-2 text-2xl font-semibold text-gray-800 text-center">Currently Cooking: {preparedRecipe.length}</h2>
                 <table className="table">
                     {/* head */}
                     <thead>
@@ -73,6 +77,14 @@ const Sidebar = ({ recipeQueue, handleRemove, preparedRecipe }) => {
                             ))
                         }
 
+                        {/* sum of time and calories */}
+                        <tr className='border-none'>
+                            <td></td>
+                            <td></td>
+                            <td>Total Time = {totalTime}</td>
+                            <td>Total Calories =  {totalCalories}</td>
+                        </tr>
+
                     </tbody>
                 </table>
             </div>
@@ -85,7 +97,10 @@ const Sidebar = ({ recipeQueue, handleRemove, preparedRecipe }) => {
 Sidebar.propTypes = {
     recipeQueue: PropTypes.array.isRequired,
     handleRemove: PropTypes.func.isRequired,
-    preparedRecipe: PropTypes.array.isRequired
+    preparedRecipe: PropTypes.array.isRequired,
+    calculateTimeAndCalories: PropTypes.func.isRequired,
+    totalTime: PropTypes.number.isRequired,
+    totalCalories: PropTypes.number.isRequired
 };
 
 export default Sidebar;

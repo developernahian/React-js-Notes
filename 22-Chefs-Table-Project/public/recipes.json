@@ -14,8 +14,8 @@
       "1 green bell pepper, sliced",
       "1 onion, sliced"
     ],
-    "preparing_time": "30",
-    "calories": "320"
+    "preparing_time": 30,
+    "calories": 320
   },
   {
     "recipe_id": 2,
@@ -32,8 +32,8 @@
       "60 ml white wine",
       "2 tbsp olive oil"
     ],
-    "preparing_time": "40",
-    "calories": "380"
+    "preparing_time": 40,
+    "calories": 380
   },
   {
     "recipe_id": 3,
@@ -49,8 +49,8 @@
       "1 tsp olive oil",
       "Salt and pepper to taste"
     ],
-    "preparing_time": "25",
-    "calories": "250"
+    "preparing_time": 25,
+    "calories": 250
   },
   {
     "recipe_id": 4,
@@ -67,8 +67,8 @@
       "1 tbsp olive oil",
       "Salt and pepper to taste"
     ],
-    "preparing_time": "15",
-    "calories": "280"
+    "preparing_time": 15,
+    "calories": 280
   },
   {
     "recipe_id": 5,
@@ -85,8 +85,8 @@
       "1 bay leaf",
       "Salt and pepper to taste"
     ],
-    "preparing_time": "20",
-    "calories": "380"
+    "preparing_time": 20,
+    "calories": 380
   },
   {
     "recipe_id": 6,
@@ -101,7 +101,7 @@
       "100 g all-purpose flour",
       "50 g cocoa powder"
     ],
-    "preparing_time": "40",
-    "calories": "300"
+    "preparing_time": 40,
+    "calories": 300
   }
 ]
