@@ -28,6 +28,19 @@ function App() {
 
 
 
+
+  // const handleRemove = (id) => { 
+  //   const updatedQueue = recipeQueue.filter(recipe => recipe.recipe_id !== id);
+  //   const deletedRecipe = recipeQueue.find(recipe => recipe.recipe_id === id);
+  
+  //   setRecipeQueue(updatedQueue);
+  
+  //   if (deletedRecipe) {
+  //     setPreparedRecipe([...preparedRecipe, deletedRecipe]);
+  //   }
+  // };
+  // console.log(preparedRecipe);
+// OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR
   const handleRemove = (id) => {
     // find which recipe to remove
     const deletedRecipe = recipeQueue.find(recipe => recipe.recipe_id === id)
@@ -41,13 +54,15 @@ function App() {
   console.log(preparedRecipe);
 
 
+  
+
+
 
 // json data string na hoye number ache tai parseInt use na kore direct add korechi
   const calculateTimeAndCalories = (time, calories) => {
     setTotalTime(totalTime + time)
     setTotalCalories(totalCalories + calories)
   }
-
 
 
 //Json data jodi emon number "preparing_time": 30 na hoye "preparing_time": "30" string  hoy tahole parseInt(time, 10) or +time use korte hobe..
@@ -70,15 +85,6 @@ function App() {
 
 
   
-  // const handleRemove = (id) => {
-  //   // find which recipe to remove
-  //   const deletedRecipe = recipeQueue.filter(recipe => recipe.recipe_id !== id)
-  //   // remove from want to cook table
-  //   setRecipeQueue(deletedRecipe)
-  //   // add to currently cooking table
-  //   setPreparedRecipe([...preparedRecipe, deletedRecipe])
-  // }
-  // console.log(preparedRecipe);
   
 
   return (
