@@ -1,0 +1,107 @@
+[
+  {
+    "recipe_id": 1,
+    "recipe_name": "Spicy Chicken Stir-Fry",
+    "recipe_image": "https://i.ibb.co.com/DVvZMY4/download.jpg",
+    "short_description": "A Fiery stir-fry that's quick and easy to make.",
+    "ingredients": [
+      "550 g chicken breast",
+      "120 ml soy sauce",
+      "200 g basil leaves",
+      "400 g mushrooms",
+      "2 cloves garlic, minced",
+      "1 red bell pepper, sliced",
+      "1 green bell pepper, sliced",
+      "1 onion, sliced"
+    ],
+    "preparing_time": 30,
+    "calories": 320
+  },
+  {
+    "recipe_id": 2,
+    "recipe_name": "Creamy Mushroom Risotto",
+    "recipe_image": "https://i.ibb.co.com/GWwdmNY/download-1.jpg",
+    "short_description": "A rich and indulgent risotto with earthy mushrooms.",
+    "ingredients": [
+      "300 g Arborio rice",
+      "1 L vegetable broth",
+      "200 g mushrooms",
+      "50 g grated Parmesan cheese",
+      "1 onion, finely chopped",
+      "2 cloves garlic, minced",
+      "60 ml white wine",
+      "2 tbsp olive oil"
+    ],
+    "preparing_time": 40,
+    "calories": 380
+  },
+  {
+    "recipe_id": 3,
+    "recipe_name": "Classic Margherita Pizza",
+    "recipe_image": "https://i.ibb.co.com/TPZKqwf/Margheria-Pizza.jpg",
+    "short_description": "A timeless favorite with a simple yet delicious combination of flavors.",
+    "ingredients": [
+      "300 g pizza dough",
+      "200 g mozzarella cheese",
+      "200 g tomato sauce",
+      "10 fresh basil leaves",
+      "2 cloves garlic, minced",
+      "1 tsp olive oil",
+      "Salt and pepper to taste"
+    ],
+    "preparing_time": 25,
+    "calories": 250
+  },
+  {
+    "recipe_id": 4,
+    "recipe_name": "Fresh Summer Salad",
+    "recipe_image": "https://i.ibb.co.com/w6kdMmn/download-2.jpg",
+    "short_description": "A refreshing salad bursting with seasonal flavors.",
+    "ingredients": [
+      "200 g mixed salad greens",
+      "100 g cherry tomatoes, halved",
+      "250 cucumber, sliced",
+      "1 avocado, diced",
+      "50 g feta cheese, crumbled",
+      "2 tbsp balsamic vinegar",
+      "1 tbsp olive oil",
+      "Salt and pepper to taste"
+    ],
+    "preparing_time": 15,
+    "calories": 280
+  },
+  {
+    "recipe_id": 5,
+    "recipe_name": "Momemade Vegetable Soup",
+    "recipe_image": "https://i.ibb.co.com/8s89Q0K/spaghetti.png",
+    "short_description": "A hearty and nutritious soup that's perfect for chilly days.",
+    "ingredients": [
+      "500 g mixed vegetables (carrots, celery, potatoes)",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "1 L vegetable broth",
+      "1 can diced tomatoes",
+      "1 tsp dried thyme",
+      "1 bay leaf",
+      "Salt and pepper to taste"
+    ],
+    "preparing_time": 20,
+    "calories": 380
+  },
+  {
+    "recipe_id": 6,
+    "recipe_name": "Decadent Chocolate Brownies",
+    "recipe_image": "https://i.ibb.co.com/HKQG7q0/caesar.png",
+    "short_description": "Indulge in these rich and fudgy chocolate brownies.",
+    "ingredients": [
+      "200 g dark chocolate",
+      "150 g unsalted butter",
+      "200 g granulated sugar",
+      "3 eggs",
+      "100 g all-purpose flour",
+      "50 g cocoa powder"
+    ],
+    "preparing_time": 40,
+    "calories": 300
+  }
+]
