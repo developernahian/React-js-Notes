@@ -1,0 +1,17 @@
+/* Google Fonts Inter and Sora */
+/* Sora -> Body/Default */
+/* Inter -> this thxt only -> ""Get the latest updates and news right in your inbox!"" from newsletter section -> using by taiwind custom css class */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap');
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+    font-family: "Sora", serif;
+    color: rgb(19, 19, 19);
+}
