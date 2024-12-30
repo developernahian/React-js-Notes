@@ -1,13 +1,17 @@
 
 import './App.css'
+import NavBar from './Components/NavBar/NavBar'
 
 function App() {
 
 
+  
+  
+
   return (
     <>
       
-      <h1>Price Options</h1>
+      <NavBar></NavBar>
       
 
     </>
