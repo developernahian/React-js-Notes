@@ -84,7 +84,7 @@ const PriceOptions = () => {
                             <h4 className='text-3xl'>{option.name}</h4>
 
 
-
+                            {/* (Parent-> flex) (child flex-grow) */}
                             <div className="mt-3 pl-5 flex-grow">
                                 {
                                     option.features.map((feature, index) =>
@@ -115,3 +115,7 @@ const PriceOptions = () => {
 };
 
 export default PriceOptions;
+
+// NOTE: 1) (Parent-> flex) (child flex-grow) chile konta? same chile repeat but content text ba list kom beshi er karone soman na hole oi same type cer child ta flex-grow korte hbe parent ta age flex kore nite hobe
+
+// NOte: 2) button center e ase na. to button ta center e ante hole div er moddhe rakhte hobe. example ei code e ache.
