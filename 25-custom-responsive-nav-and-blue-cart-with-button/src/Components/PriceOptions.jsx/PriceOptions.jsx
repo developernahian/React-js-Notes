@@ -95,7 +95,7 @@ const PriceOptions = () => {
                                 }
                             </div>
 
-
+                            {/* button*/}
                             <div className="w-full flex justify-center items-center">
                                 <button className="mt-12 bg-green-700 w-20 py-2">But Now</button>
                             </div>
