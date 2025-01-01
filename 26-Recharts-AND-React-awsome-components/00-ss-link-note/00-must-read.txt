@@ -1,0 +1,22 @@
+***************************** ReChart ***********************************
+Module: B10 44.6 for details
+VLINK: B10 M-44-6 Use reachart to draw any type of chart using React
+
+WLINK: https://recharts.org/en-US/
+
+Details er jonno must Module 44.6 er video ta dekhte hobe...
+
+
+
+***************** axios *******************
+Module 44-7
+halka dharona ache. in future details korano hobe....
+
+
+
+
+*************************** React Awesome components ***********************
+Module: 44.8 for details
+VLINK: B10 M-44-8
+
+WLINK: https://github.com/brillout/awesome-react-components

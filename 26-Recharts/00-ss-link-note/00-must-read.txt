@@ -1,6 +1,0 @@
-Module: 44.6 for details
-VLINK: M-44-6 Use reachart to draw any type of chart using React
-
-https://recharts.org/en-US/
-
-Details er jonno must Module 44.6 er video ta dekhte hobe...
