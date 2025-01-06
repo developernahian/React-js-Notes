@@ -84,7 +84,7 @@ const PriceOptions = () => {
                             <h4 className='text-3xl'>{option.name}</h4>
 
 
-                            {/* (Parent-> flex) (child flex-grow) */}
+                            {/* (Parent-> flex) (child flex-gro */}
                             <div className="mt-3 pl-5 flex-grow">
                                 {
                                     option.features.map((feature, index) =>
