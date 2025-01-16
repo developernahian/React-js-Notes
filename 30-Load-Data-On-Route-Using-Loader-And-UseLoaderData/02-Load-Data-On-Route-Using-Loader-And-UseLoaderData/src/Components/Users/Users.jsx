@@ -1,23 +1,32 @@
 import { useLoaderData } from "react-router-dom";
+import User from "../User/user";
 
 
 const Users = () => {
 
     const users = useLoaderData()
 
-    console.log(users);
+    console.log(users); //(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+
+    const userGrid = {
+        display: 'grid',
+        gridTemplateColumns: 'repeat(3,1fr)',
+        gap: '10px',
+    }
     
 
-    // state
-    // state --> loader
-    // use effect
-    // fetch --> state set --> set state
+
 
     return (
         <div>
             <h2>Our Users: {users.length}</h2>
-            <p>Our Users: {users.length}</p>
             <p>our users information</p>
+            <div style={userGrid}>
+                {
+                    users.map(user => <User key={user.id} user={user}></User>)
+                }
+            </div>
+
         </div>
     );
 };

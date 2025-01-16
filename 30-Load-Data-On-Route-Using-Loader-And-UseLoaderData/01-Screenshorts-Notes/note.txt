@@ -1,0 +1,10 @@
+    // state
+    // state --> loader
+    // use effect
+    // fetch --> state set --> set state
+
+    OR
+    loader 
+
+    // route e gele data lagbe tokhon-> loader useLoaderData
+    // route e nai tokhon data lagbe -> state, useEffect er moddhe fetch
