@@ -1,0 +1,27 @@
+link for old version
+https://reactrouter.com/6.28.2/hooks/use-navigation
+
+
+
+
+
+
+
+must check useNavigation() enavigate.state charao aro kichu topic ache, given below. 
+ei code e only navigate.state use kora hoyeche.. for more details check link
+
+
+
+import { useNavigation } from "react-router-dom";
+
+function SomeComponent() {
+  const navigation = useNavigation();
+  navigation.state;
+  navigation.location;
+  navigation.formData;
+  navigation.json;
+  navigation.text;
+  navigation.formAction;
+  navigation.formMethod;
+  navigation.formEncType;
+}

@@ -1,0 +1,5 @@
+
+
+    // route e gele data lagbe tokhon-> loader useLoaderData
+    // route e nai tokhon data lagbe -> state, useEffect er moddhe fetch
+
