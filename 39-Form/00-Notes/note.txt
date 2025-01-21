@@ -1,0 +1,14 @@
+1. use form tag and onSubmit handler with event (e) 
+From e access e.target.[name of the input field].value
+
+2. (a) controlled element(using state): use individual field state for each input field
+
+   (b) controled element: one object in a state holding all the input fields value (eta ekhono dekhaini, apatoto skip)
+
+3. uncontrolled element: useRef to create a reference to the element and acess value by using like: nameRef.current.value
+(state diye korbo na. dom er moddhe thakbe otake ami reference diye access korbo)
+
+4. use hook to handle state and submit and error. example: search google keyword is "react hook form"
+
+5. Reusable component.
+(shudhu form er sathe related na. je kono jaigai korte pari. ekhane reusable form hisebe korechi)

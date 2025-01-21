@@ -1,0 +1,7 @@
+using useRef hook
+
+3. controled element: one object in a state holding all the input fields value (eta ekhono dekhaini)
+
+B10-M46-3
+
+//note: browser console e akta warning show korche. in future jodi ei formate use kori tahole warning ta solve kora dorkar.
