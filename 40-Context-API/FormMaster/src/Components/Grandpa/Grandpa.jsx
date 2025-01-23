@@ -24,6 +24,7 @@ const Grandpa = () => {
             <p>Net Money: {money}</p>
 
             {/* value normal string, function, state etc set korte pari  */}
+            {/* value array hisebe pathale receive korar somoy array hisebe receive receive korte hobe. and object hisebe pathale object hisebe receive korte hobe */}
             <MoneyContext.Provider value={[money, setMoney]}>
                 <AssetContext.Provider value="gold">
                     <section className="flex">
@@ -34,14 +35,11 @@ const Grandpa = () => {
                 </AssetContext.Provider>
             </MoneyContext.Provider>
 
-
         </div>
     );
 };
 
 export default Grandpa;
-
-
 /**
 * 1) Create a context and export it
 * 2) Add provider for the context wiht a value. value could be anything

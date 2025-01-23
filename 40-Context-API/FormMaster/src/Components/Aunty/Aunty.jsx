@@ -15,7 +15,9 @@ const Aunty = () => {
                 <Cousin name={'Hira'}></Cousin>
             </section>
             <p>Money: {money}</p>
+
             <button onClick={() => setMoney(money + 1000)}>Add 1000 tk</button>
+            
         </div>
     );
 };

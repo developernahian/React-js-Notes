@@ -5,6 +5,7 @@ import { AssetContext } from "../Grandpa/Grandpa";
 
 const Special = ({asset}) => {
 
+    // gift, gifttt, g or je kono nam diye receive kora jabe
     const gift = useContext(AssetContext)
 
     return (
@@ -17,3 +18,6 @@ const Special = ({asset}) => {
 };
 
 export default Special;
+
+// asset ta prop driling korechi ekhane
+// gift ta Grandpa theke useContext diye receive korechi
