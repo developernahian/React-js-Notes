@@ -1,0 +1,5 @@
+Pathname er depend kore condition kaz korar jonno useLocation()....
+
+state and pathname ei 2 ta holei kaz cholbe apatoto
+ekhane sate prop er moto kaz korbe but prop na. prop e to component to component data pathano jai. ar ekhane pathname to pathname data pathanoo jai. mane page to page data pathano jai state diye
+

@@ -14,6 +14,7 @@ import About from './Components/About/About.jsx';
 // const routerrrrrrrr = 
 const router = createBrowserRouter([
 
+  // home page er jonno path name "/home" na diye only "/" dilei hobe. karon home page default page
   {
     path: "/",
     element: <Home></Home>,
