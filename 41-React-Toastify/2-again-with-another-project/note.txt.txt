@@ -1,0 +1,6 @@
+B10-M47-9 but update howar karone process change... screenshort er process latest
+
+NOTE: je button e click korle toast show korbe oi function er moddhe design css paste korte hobe
+
+
+VLINK: https://www.npmjs.com/package/react-toastify
