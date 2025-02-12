@@ -12,6 +12,7 @@ const routes = createBrowserRouter([
     element: <MainLayout></MainLayout>,
     // errorElement: <p>Error</p>,
     children: [
+      // [=] 1
       {
         // index: true,
         path: '/',
@@ -19,6 +20,7 @@ const routes = createBrowserRouter([
         // nested component banale fetch er time e ../ diye hobe
         loader: () => fetch('../categories.json'),
         children: [
+          // [-] a
           {
             // path: '/category/:nahian', //in coffeeCards.jsx file--> const obj = useParams() //and console.log(obj); -> output: {nahian: 'Dessert Coffee'}
             // // if with distructure const {obj} = useParams() // and console.log(obj); -> output : Dessert Coffee
@@ -27,6 +29,8 @@ const routes = createBrowserRouter([
             // If the user visits /category/Black Coffee, the value of category will be "Black Coffee".
             loader: () => fetch('../coffees.json'),
           },
+
+          // [-] b
           {
             // path: '/category/:nahian', //in coffeeCards.jsx file--> const obj = useParams() //and console.log(obj); -> output: {nahian: 'Dessert Coffee'}
             // // if with distructure const {obj} = useParams() // and console.log(obj); -> output : Dessert Coffee
@@ -37,16 +41,21 @@ const routes = createBrowserRouter([
           },
         ],
       },
+
+      // [=] 2
       {
         path: '/coffees',
         element: <Coffees></Coffees>,
         loader: () => fetch('../coffees.json'),
       },
 
+      // [=] 3
       {
         path: '/dashboard',
         element: <Dashboard></Dashboard>,
       },
+
+      // [=] 4
       {
         path: '/coffee/:id',
         element: <CoffeeDetails></CoffeeDetails>,
