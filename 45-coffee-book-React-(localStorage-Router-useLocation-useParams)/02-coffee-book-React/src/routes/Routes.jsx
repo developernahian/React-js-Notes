@@ -12,15 +12,15 @@ const routes = createBrowserRouter([
     element: <MainLayout></MainLayout>,
     // errorElement: <p>Error</p>,
     children: [
-      // [=] 1
+      // [=] 1 Default Home
       {
         // index: true,
         path: '/',
         element: <Home></Home>,
-        // nested component banale fetch er time e ../ diye hobe
+        //IMPORTANT: nested component banale fetch er time e ../ diye hobe// ../ mane ak route back e jabe //B10 milestone8 Conceptual video 6 er 33:22 minute e explain // json file jodi public folder e na theke github e rekeh link fetch kora hoy tahole ../ dewa lagbe na.
         loader: () => fetch('../categories.json'),
         children: [
-          // [-] a
+          // [+] a....
           {
             // path: '/category/:nahian', //in coffeeCards.jsx file--> const obj = useParams() //and console.log(obj); -> output: {nahian: 'Dessert Coffee'}
             // // if with distructure const {obj} = useParams() // and console.log(obj); -> output : Dessert Coffee
@@ -30,7 +30,7 @@ const routes = createBrowserRouter([
             loader: () => fetch('../coffees.json'),
           },
 
-          // [-] b
+          // [+] b....
           {
             // path: '/category/:nahian', //in coffeeCards.jsx file--> const obj = useParams() //and console.log(obj); -> output: {nahian: 'Dessert Coffee'}
             // // if with distructure const {obj} = useParams() // and console.log(obj); -> output : Dessert Coffee
@@ -42,20 +42,20 @@ const routes = createBrowserRouter([
         ],
       },
 
-      // [=] 2
+      // [=] 2 Coffees
       {
         path: '/coffees',
         element: <Coffees></Coffees>,
         loader: () => fetch('../coffees.json'),
       },
 
-      // [=] 3
+      // [=] 3 Dashboard
       {
         path: '/dashboard',
         element: <Dashboard></Dashboard>,
       },
 
-      // [=] 4
+      // [=] 4 Coffee Details...................
       {
         path: '/coffee/:id',
         element: <CoffeeDetails></CoffeeDetails>,
