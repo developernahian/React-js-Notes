@@ -13,6 +13,8 @@ function App() {
   const [salary, setSalary] = useState(0)
 
 
+
+  
 // useEffect is react hook
 
   // state and salary er upor dependency rekheci
