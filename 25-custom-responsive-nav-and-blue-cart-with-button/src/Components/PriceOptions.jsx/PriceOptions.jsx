@@ -102,9 +102,6 @@ const PriceOptions = () => {
 
 
 
-
-
-
                         </div>)
 
                 }

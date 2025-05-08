@@ -33,9 +33,10 @@ const NavBar = () => {
 
 
             {/* menu top theke niche asbe emon animation korte na chaile just hidden use kora jai . hidden er code niche comment e */}
+            
             {/* <ul className={`md:flex px-4 bg-yellow-200 shadow-xl duration-1000 absolute ${open ? '' : 'hidden'}`}> */}
 
-            <ul className={`md:flex px-4 bg-yellow-200 shadow-xl md:shadow-none duration-700 absolute md:static ${open ? 'top-16' : '-top-60'}`}>
+            <ul className={ ` md:flex px-4 bg-yellow-200 shadow-xl md:shadow-none duration-700 absolute md:static ${open ? 'top-16' : '-top-60'} ` }>
                 {
                     routes.map(route => <li className="mr-10 hover:bg-yellow-500 px-6" key={route.id}><a href={route.path}>{route.name}</a></li>)
                 }
