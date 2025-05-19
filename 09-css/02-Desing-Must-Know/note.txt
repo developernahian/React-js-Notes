@@ -1,0 +1,18 @@
+parent re "flex flex-col" and je child e kom ba beshi jaiga nibe shei children re "flex-grow"
+
+Class     	Meaning
+flex	    display: flex + flex-direction: row (default)
+flex-row	Explicitly sets horizontal layout
+flex-col	Changes layout to vertical (top to bottom)
+
+only flex is-> by-default horizontal so we have to convert it in flex-col jeta (top to bottom)
+
+// parent flex flex-col 
+// child flex-grow   -> je child ta kom ba beshi point ba jaiga nibe
+
+
+
+
+
+
+

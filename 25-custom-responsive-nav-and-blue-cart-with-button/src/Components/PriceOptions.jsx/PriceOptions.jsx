@@ -84,7 +84,7 @@ const PriceOptions = () => {
                             <h4 className='text-3xl'>{option.name}</h4>
 
 
-                            {/* (Parent-> flex) (child flex-gro */}
+                            {/* (Parent-> flex) (child flex-grow */}
                             <div className="mt-3 pl-5 flex-grow">
                                 {
                                     // key hisebe special special id na thakle index/idx/i egulo use kora hoy
