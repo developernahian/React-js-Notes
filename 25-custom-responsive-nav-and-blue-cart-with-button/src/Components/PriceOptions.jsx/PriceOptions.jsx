@@ -87,6 +87,11 @@ const PriceOptions = () => {
                             {/* (Parent-> flex) (child flex-gro */}
                             <div className="mt-3 pl-5 flex-grow">
                                 {
+                                    // key hisebe special special id na thakle index/idx/i egulo use kora hoy
+                                    // (map, for each, filter, find) egulor khetre evabe index use kora hoy jodi special id na dewa thake to.... 
+                                    // karon (map, for each, filter, find) jokhon kori tokhon 3 ta parameter jai. 1)Value 2)Index 3)full-Array
+                                    // Just remember: The position matters, not the name.
+                                    //B10M44-5
                                     option.features.map((feature, index) =>
                                         <div key={index} className="flex items-center gap-2 ">
 
