@@ -1,4 +1,5 @@
 import { LineChart as LChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+//Linechart import korar por LChart hisebe chenge koreci karon function er nam tai LineChart. simmeler name hoye geche so chenge kore niyechi...
 
 const LineChart = () => {
 
@@ -25,6 +26,7 @@ const LineChart = () => {
 
     return (
         <div>
+        {/* width 600 means 600px */}
         {/* XAsis er all nam na dekhale widht barale all nam dekhabe */}
             <LChart width={600} height={400} data={studentMarks}>
                 <XAxis dataKey="name" />
@@ -41,6 +43,9 @@ const LineChart = () => {
 };
 
 export default LineChart;
+
+// 📌 Best Practice:
+// Always use string literals (dataKey="...") when the value is static. Use JSX expressions (dataKey={...}) only when needed dynamically.
 
 
 
