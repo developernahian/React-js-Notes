@@ -1,0 +1,3 @@
+Link = a tag       NavLink = active class 
+useNavigate = button er moddhe on click function call kore route e navitate kora and (-1) go back
+useNavigation =  outlate show korar age loading.....  or etc
