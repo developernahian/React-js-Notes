@@ -2,6 +2,9 @@
 
 // children : eta react er... children mane children. onno keyword use kora jabe na
 const ReusableForm = ({formTitle, handleSubmit, submitBtnText='Submit', children}) => {
+    // The key point: Default value only works if nothing is passed-> submitBtnText = 'Submit'
+    // "If nothing is passed for submitBtnText, use 'Submit' by default."
+
 
     const handleLocalSubmit = e => {
         e.preventDefault()
